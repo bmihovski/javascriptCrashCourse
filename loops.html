@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loops</title>
+    <script>
+        window.onload = function() {
+            var x = 50;
+
+            while(x > 0) {
+                document.getElementById('output').
+                    innerHTML += "<h2>" + x + "</h2>";
+                x--;
+            }
+
+            for(var y = 1; y <= 10; y++) {
+                console.log(y);
+            }
+
+            while(input != "XXX") {
+                var input = prompt("Enter your value?");
+                alert("continue");
+            }
+        }
+
+    </script>
+    </head>
+    <body><div id="output"></div></body>
+</html>
