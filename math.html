@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Variables and math in JavaScript</title>
+    <script>
+        window.onload = function() {
+        var sideALenght = 27;
+        var sideBLenght = 13.4;
+        var totalLenght = sideALenght + sideBLenght;
+        var area = sideALenght * sideBLenght;
+        var diff = sideALenght - sideBLenght;
+        var average = totalLenght / 2;
+
+        var out = "";
+        out += "Total lenght " + totalLenght;
+        out += "<br/>Area: " + area;
+        out += "<br/>Difference: " + diff;
+        out += "<br/>Average Lenght " + average;
+
+        //Modulus
+        var result = 12 % 3; //0
+        out += "<br/>Modulus 1: " + result;
+        var result2 = 15 % 2; //1
+        out += "<br/>Modulus 2: " + result2;
+        document.getElementById('output').innerHTML = out;
+        }
+    </script>
+    </head>
+    <body>
+        <div id="output"></div>
+    </body>
+
+</html>
