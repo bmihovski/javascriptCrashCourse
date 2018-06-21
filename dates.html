@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Dates</title>
+    <script>
+        window.onload = function() {
+            var today = new Date();
+            document.getElementById('result').innerHTML = "<p>" + today.toDateString() + "\n</p>";
+            var dob = new Date("24 December, 1979 10:00:00");
+            document.getElementById('result').innerHTML += "<p>" + dob + "\n</p>";
+            var epoch = new Date(4343599999);
+            document.getElementById('result').innerHTML += "<p>" + epoch + "\n</p>";
+        }
+    </script>
+    </head>
+<body>
+    <div id="result"></div>
+    </body>
+</html>
